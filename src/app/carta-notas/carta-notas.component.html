@@ -1,12 +1,12 @@
 <div #container class="note-card-container">
 
     <div class="note-card-content">
-        <h1 class="note-card-title">lorem ipsum</h1>
+        <h1 class="note-card-title">{{ title }}</h1>
 
-        <div class="note-card-body">
-            <p>Body Text Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex distinctio temporibus sunt eos nulla asperiores amet officia ipsam optio, architecto, possimus expedita dolore assumenda perferendis voluptatibus quibusdam ipsa? Placeat, qui? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad facere itaque fugiat repellendus corporis provident ab voluptatum modi et earum voluptate eligendi magnam, suscipit iusto natus odio expedita libero. Doloribus!</p>
+        <div #bodyText class="note-card-body">
+            <p> {{ body }}</p>
 
-            <div class="fade-out-truncation"></div>
+            <div #truncator class="fade-out-truncation"></div>
         </div>
     </div>
 
