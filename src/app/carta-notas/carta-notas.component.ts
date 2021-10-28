@@ -1,4 +1,5 @@
-import { Component, ElementRef, Input, OnInit, Renderer2, ViewChild } from '@angular/core';
+import { Component, ElementRef, Input, OnInit, Output, Renderer2, ViewChild, EventEmitter } from '@angular/core';
+
 
 @Component({
   selector: 'app-carta-notas',
@@ -9,6 +10,9 @@ export class CartaNotasComponent implements OnInit {
 
   @Input() title!: string;
   @Input() body!: string;
+  @Input() link!: number;
+
+  @Output('delete') deleteEvent: EventEmitter<void>= new EventEmitter<void>();
 
   @ViewChild('truncator',{static:true}) truncator!: ElementRef<HTMLElement>;
   @ViewChild('bodyText',{static:true}) bodyText!: ElementRef<HTMLElement>;
@@ -30,6 +34,11 @@ export class CartaNotasComponent implements OnInit {
 
       this.renderer.setStyle(this.truncator?.nativeElement,'display','none');
     }
+  }
+
+  onXButtonClick(){
+
+    this.deleteEvent.emit();
   }
 
 }

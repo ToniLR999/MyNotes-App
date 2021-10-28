@@ -13,8 +13,13 @@
     </div>
     
     <div class="notes-list">
-        <app-carta-notas title="cardTitle" body="Testing testing testing"></app-carta-notas>
-        <app-carta-notas></app-carta-notas>
-        <app-carta-notas></app-carta-notas>
+        <app-carta-notas 
+            *ngFor="let nota of notas; index as i" 
+            [link]="i"
+            (delete)= "deleteNote(i)"
+            [title]="nota.titulo"  
+            [body]="nota.body"></app-carta-notas>
     </div>
+
+    <button class="button floating-add-button is-primary" routerLink="new">Añadir</button>
 </div>

@@ -5,7 +5,9 @@ import { ListaNotasComponent } from './paginas/lista-notas/lista-notas.component
 import { MainLayoutComponent } from './paginas/main-layout/main-layout.component';
 
 const routes: Routes = [
-  {path: '',component: MainLayoutComponent, children: [{  path: '',component: ListaNotasComponent},
+  {path: '',component: MainLayoutComponent, children: [
+    {path: '',component: ListaNotasComponent},
+  {path: 'new',component: DetallesNotasComponent},
   {path: ':id',component: DetallesNotasComponent}
 
 ]
