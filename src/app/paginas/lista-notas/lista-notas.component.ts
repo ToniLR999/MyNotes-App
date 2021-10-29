@@ -43,6 +43,8 @@ export class ListaNotasComponent implements OnInit {
     let uniqueResults = this.borrarDuplicadas(allResults);
     this.notasFiltradas = uniqueResults;
 
+    this.ordenarPorRelevancia(allResults);
+
   }
 
   borrarDuplicadas(arr: Array<any>) : Array<any> {
@@ -66,5 +68,37 @@ export class ListaNotasComponent implements OnInit {
     })
 
     return relevantNotes;
+  }
+
+  ordenarPorRelevancia(resultados: Nota[]){
+
+    let noteCountObj: any = {};
+
+    resultados.forEach(nota => {
+
+      let noteId = this.notasService.getId(nota);
+
+      if(noteCountObj[noteId]){
+        noteCountObj[noteId] += 1;
+
+
+
+      }else {
+        noteCountObj[noteId] = 1;
+
+      }
+
+
+    })
+
+    this.notasFiltradas = this.notasFiltradas.sort((a: Nota, b: Nota) => {
+      let aId = this.notasService.getId(a);
+      let bId = this.notasService.getId(b);
+
+      let aCount = noteCountObj[aId];
+      let bCount = noteCountObj[bId];
+
+      return bCount - aCount;
+    })
   }
 }
