@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Nota } from 'src/app/shared/nota.model';
 import { NotasService } from 'src/app/shared/notas.service';
 
@@ -12,15 +12,20 @@ export class ListaNotasComponent implements OnInit {
   notas: Nota[] = new Array<Nota>();
   notasFiltradas : Nota[] = new Array<Nota>();
 
+  @ViewChild('filterInput')
+  filterInputElRef!: ElementRef<HTMLInputElement>;
+
   constructor(private notasService: NotasService) { }
 
   ngOnInit(): void {
     this.notas = this.notasService.getAll();
-    this.notasFiltradas = this.notas;
+    this.notasFiltradas = this.notasService.getAll();
   }
 
-  deleteNota(id: number){
-    this.notasService.delete(id);
+  deleteNota(nota: Nota){
+    let NotaId = this.notasService.getId(nota);
+    this.notasService.delete(NotaId);
+    this.filtro(this.filterInputElRef.nativeElement.value);
 
   }
 
@@ -44,6 +49,12 @@ export class ListaNotasComponent implements OnInit {
     this.notasFiltradas = uniqueResults;
 
     this.ordenarPorRelevancia(allResults);
+
+  }
+
+  generateNoteUrl(nota : Nota){
+    let NotaId = this.notasService.getId(nota);
+    return NotaId;
 
   }
 
