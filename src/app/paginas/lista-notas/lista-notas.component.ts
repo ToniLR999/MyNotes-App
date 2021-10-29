@@ -10,11 +10,13 @@ import { NotasService } from 'src/app/shared/notas.service';
 export class ListaNotasComponent implements OnInit {
 
   notas: Nota[] = new Array<Nota>();
+  notasFiltradas : Nota[] = new Array<Nota>();
 
   constructor(private notasService: NotasService) { }
 
   ngOnInit(): void {
     this.notas = this.notasService.getAll();
+    this.notasFiltradas = this.notas;
   }
 
   deleteNota(id: number){
@@ -31,6 +33,16 @@ export class ListaNotasComponent implements OnInit {
 
     terms = this.borrarDuplicadas(terms);
 
+    terms.forEach(term => {
+      let results = this.relevantNotes(term);
+
+      allResults = [...allResults, ...results]
+
+    });
+
+    let uniqueResults = this.borrarDuplicadas(allResults);
+    this.notasFiltradas = uniqueResults;
+
   }
 
   borrarDuplicadas(arr: Array<any>) : Array<any> {
@@ -41,15 +53,18 @@ export class ListaNotasComponent implements OnInit {
     return Array.from(uniqueResults);
   } 
 
-  relevantNotes(query: string){
+  relevantNotes(query: string) : Array<Nota>{
     query = query.toLowerCase().trim();
     let relevantNotes = this.notas.filter(nota => {
-      if(nota.body.toLowerCase().includes(query) || nota.titulo.toLowerCase().includes(query)){
+      if(nota.titulo && nota.titulo.toLowerCase().includes(query)){
         return true;
       }
-      return false;
+      if(nota.body && nota.body.toLowerCase().includes(query)){
+        return true;
+      }
+        return false;
     })
 
-
+    return relevantNotes;
   }
 }
