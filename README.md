@@ -3,12 +3,12 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.11.
 
 ## Tabla de contenidos
-* [Información General]
-* [Capturas de pantalla]
-* [Instalación]
-* [Desarrollado con]
-* [Tests]
-* [Licencia]
+* [Información General](#Información-General)
+* [Capturas de pantalla](#Capturas-de-pantalla)
+* [Instalación](#Instalación)
+* [Desarrollado con](#Desarrollado-con)
+* [Tests](#Tests)
+* [Licencia](#Licencia)
 
 
 ## Información General
