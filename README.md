@@ -13,6 +13,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Información General
 
+***MisNotas*** es una aplicacion web con la que puedes crear , editar , eliminar tus propias notas en las que puedes añadir un titulo y una descripcion, la web tambien incluye un buscador para encontrar la nota que quieras por el titulo. ***MisNotas*** sirve como herramienta de organizacion y preparacion del dia a dia.
+
 ## Capturas de pantalla
 
 ## Instalación
