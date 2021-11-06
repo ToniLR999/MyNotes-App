@@ -38,7 +38,7 @@ Finalmente usan el copmando ***npm start*** para levantar el servidor local.
 
 **inserte foto de npm start**
 
-Con esto ya podran ver el proyecto abriendo su navegador en localhost y en el puerto 4200.
+Con esto  si lo tienen predeterminado ya podran ver el proyecto abriendo su navegador en localhost y en el puerto 4200.
 
 ## Desarrollado con:
 
