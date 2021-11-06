@@ -46,6 +46,7 @@ Con esto  si lo tienen predeterminado ya podran ver el proyecto abriendo su nave
 
 ## Licencia
 
+[MIT](https://github.com/ToniLR999/MisNotas-App/blob/main/LICENSE) © Toni Lupiañez
 
 
 ## Development server
