@@ -19,6 +19,27 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Instalación
 
+Para utilizar ***MisNotas*** tendra que clonar el repositorio en su ordenador.
+Para ello necesitara:
+* Git
+* NPM
+
+Con estas herramientas ya podran clonar y ejecutar este proyecto en su ordenador.
+Para clonar el repositorio tendran que utilizar el comando ***git clone***, y le tendran que pasar como parametro la url del repositorio que quieren clonar en este caso seria la url de este proyecto. Para ello se posicionan desde la consola en el lugar que deseen clonar el proyecto y usamos el comnado
+
+**inserte foto git clone**
+
+Una vez clonado el proyecto tendran que moverse al interior de la carpeta de ***MisNotas*** , y ejecutan el comando ***npm install***. En caso de ejecutar el comando desde un sistema Linux debera estar precedido por sudo, para darle permisos, en canvio si lo ejecutan desde Windows deberan iniciar la consola con privilegios de administrador
+
+**inserte foto npm install**
+
+Con npm install se nos descargara todas las dependencias necesarias para poder ejecutar el proyecto en su ordenador.
+Finalmente usan el copmando ***npm start*** para levantar el servidor local.
+
+**inserte foto de npm start**
+
+Con esto ya podran ver el proyecto abriendo su navegador en localhost y en el puerto 4200.
+
 ## Desarrollado con:
 
 ## Tests
