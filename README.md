@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.11.
 
+## README Translation
+- [English](README.md)
+- [Spanish](README.es.md)
+
 ## Tabla de contenidos
 * [Información General](#Información-General)
 * [Capturas de pantalla](#Capturas-de-pantalla)
