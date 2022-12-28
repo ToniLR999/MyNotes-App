@@ -1,4 +1,4 @@
-# MisNotas
+# MyNotes
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.11.
 
@@ -6,49 +6,53 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - [English](README.md)
 - [Spanish](README.es.md)
 
-## Tabla de contenidos
-* [Información General](#Información-General)
-* [Capturas de pantalla](#Capturas-de-pantalla)
-* [Instalación](#Instalación)
-* [Desarrollado con](#Desarrollado-con)
+## Table of Contents
+* [General Information](#General-Information)
+* [Screenshots](#Screenshots)
+* [Installation](#Installation)
+* [Built with](#Built-with)
 * [Tests](#Tests)
-* [Licencia](#Licencia)
+* [License](#License)
 
 
-## Información General
+## General Information
 
-***MisNotas*** es una aplicacion web con la que puedes crear , editar , eliminar tus propias notas en las que puedes añadir un titulo y una descripcion, la web tambien incluye un buscador para encontrar la nota que quieras por el titulo. ***MisNotas*** sirve como herramienta de organizacion y preparacion del dia a dia.
+***MyNotes*** is a web application with which you can create, edit, delete your own notes in which you can add a title and a description, the web also includes a search engine to find the note you want by title. ***MyNotes*** serves as a day-to-day organization and preparation tool.
 
-## Capturas de pantalla
 
-## Instalación
+## Screenshots
 
-Para utilizar ***MisNotas*** tendra que clonar el repositorio en su ordenador.
-Para ello necesitara:
+## Installation
+
+To use ***MyNotes*** you will need to clone the repository to your computer.
+For this you will need:
 * Git
 * NPM
 
-Con estas herramientas ya podran clonar y ejecutar este proyecto en su ordenador.
-Para clonar el repositorio tendran que utilizar el comando ***git clone***, y le tendran que pasar como parametro la url del repositorio que quieren clonar en este caso seria la url de este proyecto. Para ello se posicionan desde la consola en el lugar que deseen clonar el proyecto y usamos el comnado
+With these tools you will be able to clone and run this project on your computer.
+To clone the repository you will have to use the ***git clone*** command, and you will have to pass the url of the repository you want to clone as a parameter, in this case it would be the url of this project. To do this, they are positioned from the console in the place that they wish to clone the project and we use the command
 
-**inserte foto git clone**
 
-Una vez clonado el proyecto tendran que moverse al interior de la carpeta de ***MisNotas*** , y ejecutan el comando ***npm install***. En caso de ejecutar el comando desde un sistema Linux debera estar precedido por sudo, para darle permisos, en canvio si lo ejecutan desde Windows deberan iniciar la consola con privilegios de administrador
+**insert photo git clone**
 
-**inserte foto npm install**
+Once the project is cloned, they will have to move to the interior of the ***MyNotes*** folder, and execute the command ***npm install***. In case of executing the command from a Linux system, it must be preceded by sudo, to give it permissions, on the other hand, if they execute it from Windows, they must start the console with administrator privileges
 
-Con npm install se nos descargara todas las dependencias necesarias para poder ejecutar el proyecto en su ordenador.
-Finalmente usan el copmando ***npm start*** para levantar el servidor local.
 
-**inserte foto de npm start**
+**insert photo npm install**
 
-Con esto  si lo tienen predeterminado ya podran ver el proyecto abriendo su navegador en localhost y en el puerto 4200.
+With npm install we will download all the necessary dependencies to be able to run the project on your computer.
+Finally they use the command ***npm start*** to start the local server.
 
-## Desarrollado con:
+
+**insert photo de npm start**
+
+With this, if you have it default, you can see the project by opening your browser in localhost and in port 4200.
+
+## Built with:
 
 ## Tests
 
-## Licencia
+## License
 
 [MIT](https://github.com/ToniLR999/MisNotas-App/blob/main/LICENSE) © ToniLR
 
